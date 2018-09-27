@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     CameraView cameraView;
     ImageView previewImage;
     ShadowImageView retakeButton;
+    byte[] picture;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +65,8 @@ public class MainActivity extends AppCompatActivity {
             public void onPictureTaken(byte[] data) {
                 super.onPictureTaken(data);
 
-               // retakeButton.setVisibility(View.VISIBLE);
+                VariablesStorageClassSingleton.getInstance().picture = data;
+                // retakeButton.setVisibility(View.VISIBLE);
                 Bitmap bmp = BitmapFactory.decodeByteArray(data, 0, data.length);
                 previewImage.setImageBitmap(Bitmap.createScaledBitmap(bmp, previewImage.getWidth(), previewImage.getHeight(), false));
                 previewImage.setVisibility(View.VISIBLE);

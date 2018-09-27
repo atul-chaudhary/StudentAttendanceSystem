@@ -1,3 +1,38 @@
 <resources>
     <string name="app_name">Student Attendance System</string>
+    <string name="prompt_forCourse">Select Course</string>
+    <string name="prompt_forBranch">Select Branch</string>
+    <string name="prompt_forYear">Select Year</string>
+
+    <string-array name="course">
+        <item>Select Course</item>
+        <item>B.tech</item>
+        <item>M.tech</item>
+        <item>B.tech</item>
+        <item>Bca</item>
+        <item>Mca</item>
+
+    </string-array>
+
+    <string-array name="Branch">
+        <item>Select Branch</item>
+        <item>CS</item>
+        <item>IT</item>
+        <item>CIVIL</item>
+        <item>MECH</item>
+        <item>EC</item>
+        <item>Elect</item>
+
+    </string-array>
+
+    <string-array name="year">
+        <item>Select Year</item>
+        <item>1 year</item>
+        <item>2 year</item>
+        <item>3 year</item>
+        <item>4 year</item>
+
+    </string-array>
+
+
 </resources>
